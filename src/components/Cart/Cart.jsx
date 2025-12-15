@@ -70,7 +70,7 @@
 
 
 import { useContext } from "react";
-import { CartContext } from "@/context/cartContext.jsx";
+import { CartContext } from "@/context/cartContext.js";
 import { MdDelete } from "react-icons/md";
 
 const Cart = () => {

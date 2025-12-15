@@ -82,7 +82,7 @@
 import React, { useContext } from "react";
 import { products } from "../../data/products";
 import { categoryList } from "../../data/categoryList";
-import CartContext from "../../context/cartContext";
+import CartContext from "../../context/cartContext.js";
 import { useRef , useEffect } from "react";
 
 // const ProductList = ({ activeCategoryId }) => {
