@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { BiCategory } from "react-icons/bi";
 import { FiShoppingCart, FiUser } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
+import Logo from '../../assets/Logo.webp'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-4 cursor-pointer" onClick={()=>navigate("/")}>
             <img
-              src="/src/assets/Logo.webp"
+              src={Logo}
               alt="Pizza Heist"
               className="h-10 w-10 sm:h-14 sm:w-14 rounded-lg"
             />

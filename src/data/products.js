@@ -1,10 +1,382 @@
+// export const products = [
+//   {
+//     id: 1,
+//     name: "Book Your Seat - Unlimited Pizza",
+//     price: 300,
+//     originalPrice: 500,
+//     image: "/assets/Categories/item1.webp",
+//     categoryId: 1,
+//     discount: "40% OFF",
+//   },
+//   {
+//     id: 2,
+//     name: "French Fries With Mayo",
+//     price: 50,
+//     originalPrice: 100,
+//     image: "/assets/Categories/cat1/item1.webp",
+//     categoryId: 2,
+//     discount: "50% OFF",
+//   },
+//   {
+//     id: 3,
+//     name: "Corn Cheese Maggie",
+//     price: 90,
+//     originalPrice: 170,
+//     image: "/src/assets/Categories/cat1/item2.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 4,
+//     name: "Paneer Maggie",
+//     price: 80,
+//     originalPrice: 140,
+//     image: "/src/assets/Categories/cat1/item3.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 5,
+//     name: "Butter Maggie",
+//     price: 70,
+//     originalPrice: 140,
+//     image: "/src/assets/Categories/cat1/item4.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 6,
+//     name: "Masala Maggie",
+//     price: 60,
+//     originalPrice: 100,
+//     image: "/src/assets/Categories/cat1/item.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 7,
+//     name: "Tawa fry Momo",
+//     price: 80,
+//     originalPrice: 140,
+//     image: "/src/assets/Categories/cat1/item6.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 8,
+//     name: "Fry Momo",
+//     price: 60,
+//     originalPrice: 110,
+//     image: "/src/assets/Categories/cat1/item7.webp",
+//     categoryId: 2,
+//   },
+//   {
+//     id: 9,
+//     name: "Steam Momo",
+//     price: 50,
+//     originalPrice: 100,
+//     image: "/src/assets/Categories/cat1/item7.webp",
+//     categoryId: 2,
+//   },
+
+//   {
+//     id: 10,
+//     name: "Medium Size Pizza - 8 Piece @129-",
+//     price: 129,
+//     originalPrice: 199,
+//     image: "/src/assets/Categories/cat2/item1.webp",
+//     categoryId: 3,
+//   },
+//   {
+//     id: 11,
+//     name: "Pack Of 4 Slice @ 69-",
+//     price: 69,
+//     originalPrice: 140,
+//     image: "/src/assets/Categories/cat2/item2.webp",
+//     categoryId: 3,
+//   },
+
+//   {
+//     id: 12,
+//     name: "The Backbenchers Pizza 🍕 Loaded With Veggies",
+//     price: 119,
+//     originalPrice: 219,
+//     image: "/src/assets/Categories/cat3/item1.webp",
+//     categoryId: 4,
+//   },
+//   {
+//     id: 13,
+//     name: "Solo Study Ke liye Panner PIZZA 🍕 With Coke",
+//     price: 50,
+//     originalPrice: 100,
+//     image: "/src/assets/Categories/cat3/item2.webp",
+//     categoryId: 4,
+//   },
+
+//   {
+//     id: 14,
+//     name: "Group Study Special Combo 🍕 @499",
+//     price: 129,
+//     originalPrice: 199,
+//     image: "/src/assets/Categories/cat3/item3.webp",
+//     categoryId: 4,
+//   },
+//   {
+//     id: 15,
+//     name: "Mind Refreshing Pizza Group Study Offer",
+//     price: 69,
+//     originalPrice: 140,
+//     image: "/src/assets/Categories/cat3/item4.webp",
+//     categoryId: 4,
+//   },
+
+//   {
+//     id: 16,
+//     name: "Burger Pizza Mix 😋",
+//     price: 99,
+//     originalPrice: 159,
+//     image: "/src/assets/Categories/cat4/item1.webp",
+//     categoryId: 5,
+//   },
+//   {
+//     id: 17,
+//     name: "Cheese Burger Heist Special 🍔",
+//     price: 69,
+//     originalPrice: 100,
+//     image: "/src/assets/Categories/cat4/item2.webp",
+//     categoryId: 5,
+//   },
+
+//   {
+//     id: 18,
+//     name: "Aloo Tikki Burger 🍔",
+//     price: 59,
+//     originalPrice: 99,
+//     image: "/src/assets/Categories/cat4/item3.webp",
+//     categoryId: 5,
+//   },
+//   {
+//     id: 19,
+//     name: "Classic Veggie Burger 🍔",
+//     price: 49,
+//     originalPrice: 89,
+//     image: "/src/assets/Categories/cat4/item4.webp",
+//     categoryId: 5,
+//   },
+
+//   {
+//     id: 20,
+//     name: "STARTER COMBO PIZZA + COKE @109",
+//     price: 99,
+//     originalPrice: 159,
+//     image: "/src/assets/Categories/cat4/item5.webp",
+//     categoryId: 6,
+//   },
+//   {
+//     id: 21,
+//     name: "129 Party Combo 🍕",
+//     price: 169,
+//     originalPrice: 299,
+//     image: "/src/assets/Categories/cat4/item6.webp",
+//     categoryId: 6,
+//   },
+
+//   {
+//     id: 22,
+//     name: "Night HEIST COMBO With 8 Pizza , 2 Burger , 4 .coke",
+//     price: 1999,
+//     originalPrice: 2599,
+//     image: "/src/assets/Categories/cat4/item7.webp",
+//     categoryId: 6,
+//   },
+//   {
+//     id: 23,
+//     name: "6 Pizza + 2 Burger + 2 Large Coke Combo",
+//     price: 1449,
+//     originalPrice: 1799,
+//     image: "/src/assets/Categories/cat4/item8.webp",
+//     categoryId: 6,
+//   },
+
+//   {
+//     id: 24,
+//     name: "Fresh Veggie",
+//     price: 189,
+//     originalPrice: 249,
+//     image: "/src/assets/Categories/cat5/item1.webp",
+//     categoryId: 7,
+//   },
+//   {
+//     id: 25,
+//     name: "Deluxe Veggie",
+//     price: 49,
+//     originalPrice: 89,
+//     image: "/src/assets/Categories/cat5/item2.webp",
+//     categoryId: 7,
+//   },
+
+//   {
+//     id: 26,
+//     name: "Mexican Green Wave",
+//     price: 99,
+//     originalPrice: 159,
+//     image: "/src/assets/Categories/cat5/item3.webp",
+//     categoryId: 7,
+//   },
+//   {
+//     id: 27,
+//     name: "Vegie Paradise",
+//     price: 169,
+//     originalPrice: 299,
+//     image: "/src/assets/Categories/cat5/item4.webp",
+//     categoryId: 7,
+//   },
+
+//   {
+//     id: 28,
+//     name: "Farmhouse",
+//     price: 1999,
+//     originalPrice: 2599,
+//     image: "/src/assets/Categories/cat5/item5.webp",
+//     categoryId: 7,
+//   },
+//   {
+//     id: 29,
+//     name: "Margherita",
+//     price: 1449,
+//     originalPrice: 1799,
+//     image: "/src/assets/Categories/cat5/item6.webp",
+//     categoryId: 7,
+//   },
+
+//   {
+//     id: 30,
+//     name: "Coca cola",
+//     price: 20,
+//     originalPrice: 24,
+//     image: "/src/assets/Categories/cat6/item1.webp",
+//     categoryId: 8,
+//   },
+//   {
+//     id: 31,
+//     name: "Pepsi",
+//     price: 29,
+//     originalPrice: 49,
+//     image: "/src/assets/Categories/cat6/item2.webp",
+//     categoryId: 8,
+//   },
+
+//   {
+//     id: 32,
+//     name: "Mineral water",
+//     price: 20,
+//     originalPrice: 20,
+//     image: "/src/assets/Categories/cat6/item3.webp",
+//     categoryId: 8,
+//   },
+//   {
+//     id: 33,
+//     name: "Appy fizz",
+//     price: 25,
+//     originalPrice: 25,
+//     image: "/src/assets/Categories/cat6/item4.webp",
+//     categoryId: 8,
+//   },
+
+//   {
+//     id: 34,
+//     name: "Mirinda",
+//     price: 25,
+//     originalPrice: 25,
+//     image: "/src/assets/Categories/cat6/item5.webp",
+//     categoryId: 8,
+//   },
+
+//   {
+//     id: 35,
+//     name: "Cheesy Heist Special With Hot Chilli",
+//     price: 200,
+//     originalPrice: 300,
+//     image: "/src/assets/Categories/cat6/item6.webp",
+//     categoryId: 9,
+//   },
+//   {
+//     id: 36,
+//     name: "Corn + Capsicum + Onion",
+//     price: 149,
+//     originalPrice: 250,
+//     image: "/src/assets/Categories/cat6/item7.webp",
+//     categoryId: 9,
+//   },
+
+//   {
+//     id: 37,
+//     name: "Tomato + Capsicum + Paneer",
+//     price: 149,
+//     originalPrice: 189,
+//     image: "/src/assets/Categories/cat6/item8.webp",
+//     categoryId: 9,
+//   },
+
+//   {
+//     id: 38,
+//     name: "Pizza Heist Chilli Special",
+//     price: 110,
+//     originalPrice: 120,
+//     image:"/src/assets/Categories/cat6/item9.webp",
+//     categoryId: 10,
+//   },
+//   {
+//     id: 39,
+//     name: "Tomato + Panner",
+//     price: 109,
+//     originalPrice: 180,
+//     image: "/src/assets/Categories/cat6/item10.webp",
+//     categoryId: 10,
+//   },
+
+//   {
+//     id: 40,
+//     name: "Panner + Corn",
+//     price: 109,
+//     originalPrice: 169,
+//     image: "/src/assets/Categories/cat6/item12.webp",
+//     categoryId: 10,
+//   },
+
+//   {
+//     id: 41,
+//     name: "Cheese + Capsicum",
+//     price: 79,
+//     originalPrice: 99,
+//     image: "/src/assets/Categories/cat6/item13.webp",
+//     categoryId: 11,
+//   },
+//   {
+//     id: 42,
+//     name: "Cheese + Onion",
+//     price: 79,
+//     originalPrice: 99,
+//     image:"/src/assets/Categories/cat6/item14.webp",
+//     categoryId: 11,
+//   },
+
+//   {
+//     id: 43,
+//     name: "CHHESE + TOMATO",
+//     price: 79,
+//     originalPrice: 99,
+//     image: "/src/assets/Categories/cat6/item11.webp",
+//     categoryId: 11,
+//   },
+// ];
+
+
+
+import { productImages } from "./productImages";
+
 export const products = [
   {
     id: 1,
     name: "Book Your Seat - Unlimited Pizza",
     price: 300,
     originalPrice: 500,
-    image: "/assets/Categories/item1.webp",
+    image: productImages[0],
     categoryId: 1,
     discount: "40% OFF",
   },
@@ -13,7 +385,7 @@ export const products = [
     name: "French Fries With Mayo",
     price: 50,
     originalPrice: 100,
-    image: "/assets/Categories/cat1/item1.webp",
+    image: productImages[1],
     categoryId: 2,
     discount: "50% OFF",
   },
@@ -22,7 +394,7 @@ export const products = [
     name: "Corn Cheese Maggie",
     price: 90,
     originalPrice: 170,
-    image: "/src/assets/Categories/cat1/item2.webp",
+    image: productImages[2],
     categoryId: 2,
   },
   {
@@ -30,7 +402,7 @@ export const products = [
     name: "Paneer Maggie",
     price: 80,
     originalPrice: 140,
-    image: "/src/assets/Categories/cat1/item3.webp",
+    image: productImages[3],
     categoryId: 2,
   },
   {
@@ -38,7 +410,7 @@ export const products = [
     name: "Butter Maggie",
     price: 70,
     originalPrice: 140,
-    image: "/src/assets/Categories/cat1/item4.webp",
+    image: productImages[4],
     categoryId: 2,
   },
   {
@@ -46,7 +418,7 @@ export const products = [
     name: "Masala Maggie",
     price: 60,
     originalPrice: 100,
-    image: "/src/assets/Categories/cat1/item.webp",
+    image: productImages[5],
     categoryId: 2,
   },
   {
@@ -54,7 +426,7 @@ export const products = [
     name: "Tawa fry Momo",
     price: 80,
     originalPrice: 140,
-    image: "/src/assets/Categories/cat1/item6.webp",
+    image: productImages[6],
     categoryId: 2,
   },
   {
@@ -62,7 +434,7 @@ export const products = [
     name: "Fry Momo",
     price: 60,
     originalPrice: 110,
-    image: "/src/assets/Categories/cat1/item7.webp",
+    image: productImages[7],
     categoryId: 2,
   },
   {
@@ -70,7 +442,7 @@ export const products = [
     name: "Steam Momo",
     price: 50,
     originalPrice: 100,
-    image: "/src/assets/Categories/cat1/item7.webp",
+    image: productImages[8],
     categoryId: 2,
   },
 
@@ -79,7 +451,7 @@ export const products = [
     name: "Medium Size Pizza - 8 Piece @129-",
     price: 129,
     originalPrice: 199,
-    image: "/src/assets/Categories/cat2/item1.webp",
+    image: productImages[9],
     categoryId: 3,
   },
   {
@@ -87,7 +459,7 @@ export const products = [
     name: "Pack Of 4 Slice @ 69-",
     price: 69,
     originalPrice: 140,
-    image: "/src/assets/Categories/cat2/item2.webp",
+    image: productImages[10],
     categoryId: 3,
   },
 
@@ -96,7 +468,7 @@ export const products = [
     name: "The Backbenchers Pizza 🍕 Loaded With Veggies",
     price: 119,
     originalPrice: 219,
-    image: "/src/assets/Categories/cat3/item1.webp",
+    image: productImages[11],
     categoryId: 4,
   },
   {
@@ -104,16 +476,15 @@ export const products = [
     name: "Solo Study Ke liye Panner PIZZA 🍕 With Coke",
     price: 50,
     originalPrice: 100,
-    image: "/src/assets/Categories/cat3/item2.webp",
+    image: productImages[12],
     categoryId: 4,
   },
-
   {
     id: 14,
     name: "Group Study Special Combo 🍕 @499",
     price: 129,
     originalPrice: 199,
-    image: "/src/assets/Categories/cat3/item3.webp",
+    image: productImages[13],
     categoryId: 4,
   },
   {
@@ -121,7 +492,7 @@ export const products = [
     name: "Mind Refreshing Pizza Group Study Offer",
     price: 69,
     originalPrice: 140,
-    image: "/src/assets/Categories/cat3/item4.webp",
+    image: productImages[14],
     categoryId: 4,
   },
 
@@ -130,7 +501,7 @@ export const products = [
     name: "Burger Pizza Mix 😋",
     price: 99,
     originalPrice: 159,
-    image: "/src/assets/Categories/cat4/item1.webp",
+    image: productImages[15],
     categoryId: 5,
   },
   {
@@ -138,16 +509,15 @@ export const products = [
     name: "Cheese Burger Heist Special 🍔",
     price: 69,
     originalPrice: 100,
-    image: "/src/assets/Categories/cat4/item2.webp",
+    image: productImages[16],
     categoryId: 5,
   },
-
   {
     id: 18,
     name: "Aloo Tikki Burger 🍔",
     price: 59,
     originalPrice: 99,
-    image: "/src/assets/Categories/cat4/item3.webp",
+    image: productImages[17],
     categoryId: 5,
   },
   {
@@ -155,7 +525,7 @@ export const products = [
     name: "Classic Veggie Burger 🍔",
     price: 49,
     originalPrice: 89,
-    image: "/src/assets/Categories/cat4/item4.webp",
+    image: productImages[18],
     categoryId: 5,
   },
 
@@ -164,7 +534,7 @@ export const products = [
     name: "STARTER COMBO PIZZA + COKE @109",
     price: 99,
     originalPrice: 159,
-    image: "/src/assets/Categories/cat4/item5.webp",
+    image: productImages[19],
     categoryId: 6,
   },
   {
@@ -172,16 +542,15 @@ export const products = [
     name: "129 Party Combo 🍕",
     price: 169,
     originalPrice: 299,
-    image: "/src/assets/Categories/cat4/item6.webp",
+    image: productImages[20],
     categoryId: 6,
   },
-
   {
     id: 22,
     name: "Night HEIST COMBO With 8 Pizza , 2 Burger , 4 .coke",
     price: 1999,
     originalPrice: 2599,
-    image: "/src/assets/Categories/cat4/item7.webp",
+    image: productImages[21],
     categoryId: 6,
   },
   {
@@ -189,7 +558,7 @@ export const products = [
     name: "6 Pizza + 2 Burger + 2 Large Coke Combo",
     price: 1449,
     originalPrice: 1799,
-    image: "/src/assets/Categories/cat4/item8.webp",
+    image: productImages[22],
     categoryId: 6,
   },
 
@@ -198,7 +567,7 @@ export const products = [
     name: "Fresh Veggie",
     price: 189,
     originalPrice: 249,
-    image: "/src/assets/Categories/cat5/item1.webp",
+    image: productImages[23],
     categoryId: 7,
   },
   {
@@ -206,16 +575,15 @@ export const products = [
     name: "Deluxe Veggie",
     price: 49,
     originalPrice: 89,
-    image: "/src/assets/Categories/cat5/item2.webp",
+    image: productImages[24],
     categoryId: 7,
   },
-
   {
     id: 26,
     name: "Mexican Green Wave",
     price: 99,
     originalPrice: 159,
-    image: "/src/assets/Categories/cat5/item3.webp",
+    image: productImages[25],
     categoryId: 7,
   },
   {
@@ -223,16 +591,15 @@ export const products = [
     name: "Vegie Paradise",
     price: 169,
     originalPrice: 299,
-    image: "/src/assets/Categories/cat5/item4.webp",
+    image: productImages[26],
     categoryId: 7,
   },
-
   {
     id: 28,
     name: "Farmhouse",
     price: 1999,
     originalPrice: 2599,
-    image: "/src/assets/Categories/cat5/item5.webp",
+    image: productImages[27],
     categoryId: 7,
   },
   {
@@ -240,7 +607,7 @@ export const products = [
     name: "Margherita",
     price: 1449,
     originalPrice: 1799,
-    image: "/src/assets/Categories/cat5/item6.webp",
+    image: productImages[28],
     categoryId: 7,
   },
 
@@ -249,7 +616,7 @@ export const products = [
     name: "Coca cola",
     price: 20,
     originalPrice: 24,
-    image: "/src/assets/Categories/cat6/item1.webp",
+    image: productImages[29],
     categoryId: 8,
   },
   {
@@ -257,16 +624,15 @@ export const products = [
     name: "Pepsi",
     price: 29,
     originalPrice: 49,
-    image: "/src/assets/Categories/cat6/item2.webp",
+    image: productImages[30],
     categoryId: 8,
   },
-
   {
     id: 32,
     name: "Mineral water",
     price: 20,
     originalPrice: 20,
-    image: "/src/assets/Categories/cat6/item3.webp",
+    image: productImages[31],
     categoryId: 8,
   },
   {
@@ -274,16 +640,15 @@ export const products = [
     name: "Appy fizz",
     price: 25,
     originalPrice: 25,
-    image: "/src/assets/Categories/cat6/item4.webp",
+    image: productImages[32],
     categoryId: 8,
   },
-
   {
     id: 34,
     name: "Mirinda",
     price: 25,
     originalPrice: 25,
-    image: "/src/assets/Categories/cat6/item5.webp",
+    image: productImages[33],
     categoryId: 8,
   },
 
@@ -292,7 +657,7 @@ export const products = [
     name: "Cheesy Heist Special With Hot Chilli",
     price: 200,
     originalPrice: 300,
-    image: "/src/assets/Categories/cat6/item6.webp",
+    image: productImages[34],
     categoryId: 9,
   },
   {
@@ -300,16 +665,15 @@ export const products = [
     name: "Corn + Capsicum + Onion",
     price: 149,
     originalPrice: 250,
-    image: "/src/assets/Categories/cat6/item7.webp",
+    image: productImages[35],
     categoryId: 9,
   },
-
   {
     id: 37,
     name: "Tomato + Capsicum + Paneer",
     price: 149,
     originalPrice: 189,
-    image: "/src/assets/Categories/cat6/item8.webp",
+    image: productImages[36],
     categoryId: 9,
   },
 
@@ -318,7 +682,7 @@ export const products = [
     name: "Pizza Heist Chilli Special",
     price: 110,
     originalPrice: 120,
-    image:"/src/assets/Categories/cat6/item9.webp",
+    image: productImages[37],
     categoryId: 10,
   },
   {
@@ -326,16 +690,15 @@ export const products = [
     name: "Tomato + Panner",
     price: 109,
     originalPrice: 180,
-    image: "/src/assets/Categories/cat6/item10.webp",
+    image: productImages[38],
     categoryId: 10,
   },
-
   {
     id: 40,
     name: "Panner + Corn",
     price: 109,
     originalPrice: 169,
-    image: "/src/assets/Categories/cat6/item12.webp",
+    image: productImages[39],
     categoryId: 10,
   },
 
@@ -344,7 +707,7 @@ export const products = [
     name: "Cheese + Capsicum",
     price: 79,
     originalPrice: 99,
-    image: "/src/assets/Categories/cat6/item13.webp",
+    image: productImages[40],
     categoryId: 11,
   },
   {
@@ -352,16 +715,16 @@ export const products = [
     name: "Cheese + Onion",
     price: 79,
     originalPrice: 99,
-    image:"/src/assets/Categories/cat6/item14.webp",
+    image: productImages[41],
     categoryId: 11,
   },
-
   {
     id: 43,
     name: "CHHESE + TOMATO",
     price: 79,
     originalPrice: 99,
-    image: "/src/assets/Categories/cat6/item11.webp",
+    image: productImages[42],
     categoryId: 11,
   },
 ];
+
