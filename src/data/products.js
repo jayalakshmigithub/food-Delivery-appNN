@@ -13,7 +13,7 @@ export const products = [
     name: "French Fries With Mayo",
     price: 50,
     originalPrice: 100,
-    image: "/src/assets/Categories/cat1/item1.webp",
+    image: "/assets/Categories/cat1/item1.webp",
     categoryId: 2,
     discount: "50% OFF",
   },
