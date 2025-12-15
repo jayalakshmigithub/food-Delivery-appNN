@@ -24,7 +24,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 // In src/components/Layout/Layout.jsx
-import { CartContext } from "@/context/cartContext.jsx";
+import { CartContext } from "@/context/cartContext.js";
 
 const Layout = ({ children }) => {
   const [cartItems, setCartItems] = useState(() => {
