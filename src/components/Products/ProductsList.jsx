@@ -11,6 +11,8 @@ import { products } from "../../data/products";
 import { categoryList } from "../../data/categoryList";
 import CartContext from "../../context/cartContext.js";
 import { useRef , useEffect } from "react";
+import toast from "react-hot-toast";
+
 
 
 
@@ -76,12 +78,23 @@ const ProductList = ({ activeCategoryId }) => {
                     </p>
                   </div>
 
-                  <button
+                  {/* <button
                     onClick={() => addToCart(product)}
                     className="border border-blue-500 px-4 py-1 rounded text-blue-500"
                   >
                     ADD +
                   </button>
+                   */}
+                   <button
+  onClick={() => {
+    addToCart(product);
+    toast.success(`${product.name} added to cart`);
+  }}
+  className="border border-blue-500 px-4 py-1 rounded text-blue-500"
+>
+  ADD +
+</button>
+
                 </div>
               ))}
             </div>
