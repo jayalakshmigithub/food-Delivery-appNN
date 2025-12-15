@@ -2,7 +2,7 @@ import { useState ,useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './components/Layout/Layout';
-import Categories from './pages/allCategories';
+import Categories from './pages/allCategories.jsx';
 import Cart from './components/Cart/Cart';
 import Home from './pages/Home.jsx';
 
