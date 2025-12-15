@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 py-4 ">
-      <div className="mx-auto max-w-4xl px-4">
+      <div className="mx-auto max-w-7xl px-7">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-4 cursor-pointer" onClick={()=>navigate("/")}>
             <img
@@ -30,13 +30,16 @@ const Header = () => {
             </span>
           </div>
 
-          <div className="hidden md:flex flex-1 mx-6">
-            <input
-              type="text"
-              placeholder="Search for products..."
-              className="w-full rounded-md border border-gray-300 bg-gray-100 px-4 py-2 text-sm lg:text-base focus:outline-none focus:border-gray-500"
-            />
-          </div>
+         <div className="hidden md:flex mx-6 w-full max-w-md">
+  <input
+    type="text"
+    placeholder="Search for products..."
+    className="w-full rounded-md border border-gray-300 bg-gray-100
+               px-4 py-2 text-sm lg:text-base
+               focus:outline-none focus:border-gray-500"
+  />
+</div>
+
 
           <div className="hidden md:flex items-center gap-4 lg:gap-6 text-sm lg:text-base font-medium text-gray-700">
             <button className="flex items-center gap-2 px-4 py-1 rounded-2xl hover:bg-gray-200">
