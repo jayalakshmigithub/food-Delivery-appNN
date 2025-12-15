@@ -368,7 +368,7 @@
 
 
 
-import { productImages } from "./productImages";
+import { productImages } from "../assets/productImages.js";
 
 export const products = [
   {
