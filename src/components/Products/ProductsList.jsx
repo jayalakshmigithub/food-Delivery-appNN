@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 import { useContext } from "react";
 import { products } from "../../data/products";
 import { categoryList } from "../../data/categoryList";

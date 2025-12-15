@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "@/components/Layout/Layout.jsx";
 import Categories from "@/pages/allCategories.jsx";
