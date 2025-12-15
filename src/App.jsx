@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from "./components/Layout/Layout.jsx";
-import Categories from "./pages/allCategories.jsx";
-import Cart from "./components/Cart/Cart.jsx";
-import Home from "./pages/Home.jsx"
+// import Layout from "./components/Layout/Layout.jsx";
+// import Categories from "./pages/allCategories.jsx";
+// import Cart from "./components/Cart/Cart.jsx";
+// import Home from "./pages/Home.jsx"
+import Layout from "@/components/Layout/Layout.jsx";
+import Categories from "@/pages/allCategories.jsx";
+import Cart from "@/components/Cart/Cart.jsx";
+import Home from "@/pages/Home.jsx";
 
 function App() {
   return (
