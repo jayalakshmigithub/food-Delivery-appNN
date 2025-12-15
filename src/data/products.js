@@ -4,7 +4,7 @@ export const products = [
     name: "Book Your Seat - Unlimited Pizza",
     price: 300,
     originalPrice: 500,
-    image: "/src/assets/Categories/item1.webp",
+    image: "/assets/Categories/item1.webp",
     categoryId: 1,
     discount: "40% OFF",
   },

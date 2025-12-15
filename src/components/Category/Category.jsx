@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { categoryList } from '../../data/categoryList'
 
 const Category = ({activeCategoryId, setActiveCategoryId,onSelect}) => {
